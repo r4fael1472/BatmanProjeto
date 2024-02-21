@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617
+}
+
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.actor-pictures-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.foto-content {
+    width: 90%;
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 80px;
+    column-gap: 40px;
+}
+
+.foto {
+    width: 70%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+
+.foto:hover {
+    transform: scale(1.02);
+}
+
+.picture-1 {
+    background-image: url('https://img.ibxk.com.br/2022/03/02/02155003122495.jpg')
+}
+
+.picture-2 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/0/08/Gotham_City_%28full_screen%29.jpg/revision/latest?cb=20220216020502')
+}
+
+.picture-3 {
+    background-image: url('https://beforesandafters.com/wp-content/uploads/2022/05/The-Making-Of-The-Batman-_-The-Batman-_-HBO-Max-1-48-screenshot.jpg')
+}
+
+.picture-4 {
+    background-image: url('https://i.insider.com/5e47186696eee617452b7c33?width=700')
+}
+
+.picture-5 {
+    background-image: url('https://fotos.jornaldocarro.estadao.com.br/wp-content/uploads/2020/06/04123612/EZWqtbbXgAEaxSC.jpg')
+}
+
+#textofotos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px
+}
+
+.coments {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+p {
+    margin-right: 90%;
+    text-indent: 3ch;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
